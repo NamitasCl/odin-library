@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Raleway:wght@400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span {
+    display: inline;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #211C24;
+}
+
+section {
+    width: 1300px;
+}
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    color: #F7F4F2;
+    background-color: #825B50;
+    box-shadow: rgba(0, 0, 0, 0.6) 0 1px 5px;
+
+}
+
+header > h1 {
+    position: relative;
+    margin-left: 30px;
+    font-size: 3rem;
+}
+
+header > h1:after {
+    position: absolute;
+    content: "Book library system v1.0.";
+    font-size: .8rem;
+    top: 3rem;
+    left: 0;
+    color: #211C24;
+}
+
+header > button {
+    margin-right: 30px;
+    padding: 15px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: #9a8591;
+    color: white;
+}
+
+main {
+    padding: 30px;
+    width: 100%;
+    background-color: white;
+}
+
+.contenedor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+    gap: 30px;    
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+.book-card {
+    position: relative;
+    width: 250px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 10px 30px;
+    border-radius: 20px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    background-color: rgb(245, 245, 245);
+    font-family:'Open Sans Condensed';
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.6);
+}
+
+.book-title span:nth-child(1) {
+    font-size: 48px;
+    color: green;
+}
+
+.book-title span:nth-child(2) {
+    margin-left: 5px;
+    font-size: 1.2rem;
+    letter-spacing: 0px;
+}
+
+.book-card-border {
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    background-color: #5A565E;
+    top: 0;
+    left: 0;
+    border-radius: 20px 0 0 20px;
+}
+
+.book-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.book-card > h4 {
+    margin-bottom: 10px;
+}
+
+
+
